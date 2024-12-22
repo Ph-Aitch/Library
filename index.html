@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles/library.css">
+    <script type="module" src="script/library.js"></script>
+</head>
+
+<body data-theme="">
+    <div class="overlay"></div>
+    <header>
+        <h1>My Library</h1>
+        <div class="theme">
+            <div class="theme-switch" id="theme-switch"></div>
+        </div>
+    </header>
+    <main>
+        <div class="btn" id="addBtn" role="button" aria-label="add new book"></div>
+        <form action="#">
+            <h3>Add book to your list</h3>
+            <div class="form-item">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required autofocus placeholder="book Title">
+            </div>
+            <div class="form-item">
+                <label for="author">Author</label>
+                <input type="text" id="author" required placeholder="book Author">
+            </div>
+            <div class="form-item">
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" min="1"  required placeholder="#Pages">
+            </div>
+            <div class="form-item">
+                <label for="read">Mark as Read:</label>
+                <input type="checkbox" name="read" id="read">
+            </div>
+            <button type="submit" id="subBtn">Add Book</button>
+        </form>
+        <div class="grid"></div>
+    </main>
+</body>
+
+</html>
